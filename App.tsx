@@ -1,14 +1,15 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
+import Routes from "./src/routes";
 import theme from "./src/styles/theme";
-import Main from "./src/views/Main";
+import "react-native-gesture-handler";
 
 const App: React.FC = () => {
   const globalTheme = theme;
 
   return (
     <ThemeProvider theme={globalTheme}>
-      <Main />
+      <Routes />
     </ThemeProvider>
   );
 };
