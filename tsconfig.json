@@ -7,5 +7,5 @@
     "styled-components-react-native"
   ],
   "extends": "expo/tsconfig.base",
-  "include": ["jest", "src/components", "src/custom.d.ts", "src/styles"]
+  "include": ["jest", "src/components", "src/@types/custom.d.ts", "src/styles"]
 }

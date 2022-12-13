@@ -1,14 +1,15 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import React from "react";
+import { RootStackParamList } from "../@types/navigation";
 import InitialAcess from "../Components/InitialAcess";
 import Main from "../views/Main";
 
-const { Navigator, Screen } = createNativeStackNavigator();
+const { Navigator, Screen } = createNativeStackNavigator<RootStackParamList>();
 
 const AppRoutes: React.FC = () => {
   return (
-    <Navigator initialRouteName="InitialAcess">
+    <Navigator initialRouteName="initialAcess">
       <Screen
         name="initialAcess"
         options={{

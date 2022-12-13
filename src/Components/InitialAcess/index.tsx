@@ -6,7 +6,7 @@ import theme from "../../styles/theme";
 import { useNavigation } from "@react-navigation/native";
 
 const InitialAcess: React.FC = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation<any>();
 
   const onPress = () => {
     navigation.navigate("main");
