@@ -21,6 +21,8 @@ const AppRoutes: React.FC = () => {
         name="main"
         options={{
           headerTitle: "Home",
+          headerBackVisible: false,
+          headerTitleAlign: "center",
         }}
         component={Main}
       />
